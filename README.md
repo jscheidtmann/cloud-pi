@@ -12,12 +12,15 @@ The software used on the cloud computer to provide a seamless cloud experience o
 * NICE DCV, streaming the desktop to a client running on your laptop or desktop (like Google Stadia)
 * PixInsight, for sure. :-)
 
+The setup assumes that you have uploaded your images into an S3-bucket. 
+
 # Prerequisites
 
 In order to set the cloud computer up the following prerequisites are needed:
 
 * An AWS account, see ... how to set it up
 * Terraform, installed on your computer for setting up the cloud computer and executing all the necessary steps 
+* 
 * PixInsight Ubuntu binaries downloaded to your computer
 * A PixInsight license
 
