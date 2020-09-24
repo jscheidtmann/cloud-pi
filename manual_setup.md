@@ -78,12 +78,15 @@ $ sudo passwd ubuntu
 Install [NICE DCV Client](https://download.nice-dcv.com/) on your local computer, start the client and connect to the server. 
 You need user `ubuntu` and password as set in the previous step. You can copy the public IP4 address from the AWS console.
 
-## Step 6 - Activate PixInsight
+## Step 6 - Activate & Configure PixInsight
 
 Either copy over your given license as described in the [PixInsight FAQs](https://pixinsight.com/faq/) (see 2.7 and 2.10), 
 or start and reactivate the copy of PixInsight on the server.
 
-### Step 6 - Download your astropix to the instance
+First thing after activating PixInsight, is to open up the preferences process and set the `tmp` directory to `/mnt/tmp`. 
+On that occasion also change the folder PixInsight downloads to `/mnt/tmp`.
+
+## Step 7 - Download your astropix to the instance
 
 Install the AWS CLI on the server, configure it and download your pics.
 
@@ -94,10 +97,6 @@ $ cd /mnt/data
 $ aws s3 sync s3://<your bucket>/<your project>/ . 
 ```
 
-### Step 7 - Start your PixInsight processing
-
-First thing in PixInsight, is to open up the preferences process and set the `tmp` directory to `/mnt/tmp` 
-to an appropriate value. On that occasion also change the folder PixInsight downloads to to `/mnt/tmp`
+## Step 8 - Start your PixInsight processing
 
 Then fire away with your astro processing.
-
