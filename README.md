@@ -15,7 +15,7 @@ Use at your own risks.
 
 # Status of this project
 Initial proof of concept setup is done, i.e. a server has been manually setup and PixInsight runs on it.
-See [Manual Setup][manual_setup.md] for how to recreate that. Some configuration quirks still exist. 
+See [Manual Setup](manual_setup.md) for how to recreate that. Some configuration quirks still exist. 
 Once these quirks have been removed, I will start automating and recreating the setup from scratch.
 
 # Software used
@@ -25,6 +25,6 @@ The software used on the cloud computer to provide a seamless cloud experience o
 * PixInsight, for sure. :-)
 
 The setup assumes that you have uploaded your images into an S3-bucket, e.g. using the aws command line interface, see 
-[Uploading Images to S3][upload.md]
+[Uploading Images to S3](upload.md)
 
 
