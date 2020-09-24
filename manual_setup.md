@@ -33,10 +33,10 @@ In the steps that follow:
 - increase the default volume size of 8 GB to 10 GB and create a second volume with a size of ~250 GB.
 - Attach a security policy allowing SSH and DCV. 
 
-## Step 4 - Launch the instance and attach the right 
+## Step 4 - Launch the instance and attach the right IAM role
 
 Launch the instance and attach an IAM role to the running instance, that allows access to the DCV license,
-see [here]() 
+see [here](https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-license.html) 
 
 ## Step 5 - Prepping the instance
 
