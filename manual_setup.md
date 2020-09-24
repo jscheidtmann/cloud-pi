@@ -80,7 +80,8 @@ You need user `ubuntu` and password as set in the previous step. You can copy th
 
 ## Step 6 - Activate PixInsight
 
-Either copy over your given license as described here, or start and activate the copy of PixInsight on the server.
+Either copy over your given license as described in the [PixInsight FAQs](https://pixinsight.com/faq/) (see 2.7 and 2.10), 
+or start and reactivate the copy of PixInsight on the server.
 
 ### Step 6 - Download your astropix to the instance
 
