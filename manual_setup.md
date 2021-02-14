@@ -100,3 +100,25 @@ $ aws s3 sync s3://<your bucket>/<your project>/ .
 ## Step 8 - Start your PixInsight processing
 
 Then fire away with your astro processing.
+
+# Saving Costs between Editing Sessions
+
+Once you are finished with your processing, you can shutdown the instance in the AWS management console.
+You will notice that most of the cost is spent on the harddisk, that is attached to the instance. In order to save
+costs between editing sessions, you can remove the disk in between sessions. Do the following:
+
+## Store your work
+
+First make a backup of your precious work results. 
+Using the aws cli, store your work into a S3-bucket
+
+```bash
+$ cd PI 
+$ aws s3 sync . s3://<your bucket>/<your project>/<results>
+```
+
+## Shutdown and Detach
+
+In the management console, shutdown the EC2 instance and then detach the volume, then delete it. 
+Note that this cannot be undone and you have to create a new volume and attach it to the computer before you start it up. 
+You will have to format and mount the volume after startup.
